@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+.backdrop {background-color: #FFF1F3;}
+
+/*.main-nav{
+    -ms-transform-origin:bottom left;
+    transform-origin:bottom left;
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);} */
+
+.title {font-weight: bold;}
+
+.main-nav__link {
+    display: inline-block;
+    -ms-transform-origin:bottom left;
+    transform-origin:bottom left;
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+   padding: 1em;}
+
+.intro {
+   place-self: center;
+   margin: 5%;
+   padding: 5%;}
+
+img {
+    min-width: 50%;
+    max-width: 80%;
+    min-height: 50%;
+    max-height: 80%;
+    margin: 5% 5% 5% 5%;
+    padding: 5% 5% 5% 5%;
+    place-self: center;
+}
+img+h5 {
+    text-decoration: none;
+    color: #D2691E;
+    text-align: center;
+    place-self: center;}
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+button.mindmap, button.userjourney, button.sitemap, button.portfolio
+    {display: block;
+         position: center;
+            height: 90%;
+            width: 60%;
+            margin: 0px 20px 0px 80px;
+            padding: 0 20px 0 20px;
+            color: #fff;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            white-space: nowrap;
+            background-image: url("../images/chocolate-button.png");
+            opacity: 0.8;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+            cursor: pointer;
+            box-sizing: border-box;
+         -ms-touch-action:manipulation;
+         touch-action:manipulation;
+    }
+button.mindmap:active
+ {background-image: url("../images/chocolate-bite.png");
+ }
+a.button
+    {display: inline-block;
+    position: center;
+       height: 38px;
+       margin: 20px 20px 20px 20px;
+       padding: 0 20px 0 20px;
+       color: #fff;
+       text-align: center;
+       font-size: 11px;
+       font-weight: 600;
+       line-height: 38px;
+       letter-spacing: .1rem;
+       text-transform: uppercase;
+       text-decoration: none;
+       white-space: nowrap;
+       background-image: url("../images/chocolate-button.png");
+       opacity: 0.8;
+       border-radius: 4px;
+       border: 1px solid #bbb;
+       cursor: pointer;
+       box-sizing: border-box;
+    -ms-touch-action:manipulation;
+    touch-action:manipulation;}
+
+a
+    {text-decoration: none;
+    color: #D2691E;
+    }
+
+a[class="main-nav__link"]:hover, a[class="main-nav__link"]:active
+    {text-decoration-line: underline;
+    text-decoration-thickness: auto;
+    text-decoration-color: #707070;}
+
+/*button
+    {overflow:visible;border:0;font:inherit;-webkit-font-smoothing:inherit;letter-spacing:inherit;background:none;cursor:pointer}*/
+
+
+/* Blog */
+
+
