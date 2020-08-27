@@ -1,52 +1,37 @@
-/*function showMindmap() {
 
-        off = document.getElementById("intro-works);
-        on = document.getElementById("mindmapContent");
-        if(on.style.display == "none")
-            {
-                off.style.display = "none";
-                on.style.display = "block";
-            }
-        else
-            {
-                off.style.display = "block";
-                on.style.display = "none";
-            }*/
-
-function show(param_div_id) {
-    document.getElementById('intro-works').innerHTML = document.getElementById(param_div_id).innerHTML;
-  }
-
-
-
-function biteChocolate() {
-    var fullChocolate = document.getElementById("fullChocolate");
-    var chocolateBite = document.createElement("chocolateBite");
-    fullChocolate.parentNode.replaceChild(chocolateBite, fullChocolate);
-    /*var off = document.getElementById("fullChocolate);
-    var on = document.getElementById("chocolateBite");
-            if(on.style.display == "none")
-                {
-                    off.style.display = "none";
-                    on.style.display = "inline-block";
-                }
-            else
-                {
-                    off.style.display = "inline-block";
-                    on.style.display = "none";
-
-                }  */
-
+function hide(id) {
+    document.getElementById(id).style.display = "none";
 }
 
+function show(id) {
+    document.getElementById(id).style.display = "inline-block";
+}
 
-/*function biteChocolate() {
-    var chocolateBite = document.createElement{"button"};
-    chocolateBite.id = "chocolateBite";
-    var fullChocolate = document.getElementById("fullChocolate");
-    var parentButton = fullChocolate.parentNode;
-    parentButton.replaceChild(chocolateBite, fullChocolate)
-    
-}  */
+function hideClass(className) {
+    var subs = document.getElementsByClassName(className);
+    for(var i = 0; i < subs.length; i++){
+        subs[i].style.display = 'none';
+    }
+}
 
+function showClass(className) {
+    var subs = document.getElementsByClassName(className);
+    for(var i = 0; i < subs.length; i++){
+        subs[i].style.display = 'inline-block';
+    }
+}
+
+function showContent(div_id) {
+    hideClass('contentAreas');
+    document.getElementById('intro-works').innerHTML = document.getElementById(div_id).innerHTML;
+}
+
+function hideAndShow(hide_id, show_id) {
+    hideClass('bittenButton');
+    hideClass('chocolateBite');
+    showClass('notBittenButton');
+    hide(hide_id);
+    show(show_id + 'BittenButton');
+    show(show_id + 'Bite');
+}
 

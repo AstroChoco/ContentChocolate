@@ -21,19 +21,24 @@
 .intro {
    place-self: center;
    margin: 5%;
-   padding: 5%;}
+   padding: 5%;
+   overflow: hidden;}
 
  .intro-works {
     place-self: center;
     margin: 5%;
     padding: 5%;}
 
-
+.chocolateBite {
+    width: 33%;
+    float: left;
+    display: none;
+}
 
 img {
-    min-width: 50%;
+    min-width: 30%;
     max-width: 80%;
-    min-height: 50%;
+    min-height: 10%;
     max-height: 80%;
     margin: 5% 5% 5% 5%;
     padding: 5% 5% 5% 5%;
@@ -49,7 +54,7 @@ img+h5 {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-button.mindmap, button.userjourney, button.sitemap, button.portfolio
+button.notBittenButton
     {display: block;
          position: center;
             height: 90%;
@@ -66,6 +71,7 @@ button.mindmap, button.userjourney, button.sitemap, button.portfolio
             text-decoration: none;
             white-space: nowrap;
             background-image: url("../images/chocolate-button.png");
+            background-color: #FFF1F3;
             opacity: 0.8;
             border-radius: 4px;
             border: 1px solid #bbb;
@@ -75,30 +81,34 @@ button.mindmap, button.userjourney, button.sitemap, button.portfolio
          touch-action:manipulation;
     }
 
-button.mindmapBite, button.userjourneyBite, button.sitemapBite, button.portfolioBite
+button.bittenButton
     {display: block;
          position: center;
             height: 90%;
-            width: 60%;
-            margin: 0px 20px 0px 80px;
+            width: 27%;
+            margin: 0px 0 0px 80px;
             padding: 0 20px 0 20px;
             color: #fff;
-            text-align: center;
+            text-align: left;
             font-size: 11px;
             font-weight: 600;
             line-height: 38px;
+            float: left;
             letter-spacing: .1rem;
             text-transform: uppercase;
             text-decoration: none;
             white-space: nowrap;
             background-image: url("../images/chocolate-bite.png");
+            background-color: #FFF1F3;
+            background-repeat: no-repeat;
             opacity: 0.8;
             border-radius: 4px;
-            border: 1px solid #bbb;
+            border: 0;
             cursor: pointer;
             box-sizing: border-box;
          -ms-touch-action:manipulation;
          touch-action:manipulation;
+         overflow: visible;
     }
 /*button.mindmap:active
  {background-image: url("../images/chocolate-bite.png");
@@ -125,7 +135,8 @@ a.button
        cursor: pointer;
        box-sizing: border-box;
     -ms-touch-action:manipulation;
-    touch-action:manipulation;}
+    touch-action:manipulation;
+    overflow: visible;}
 
 a
     {text-decoration: none;
@@ -141,6 +152,12 @@ a.main-nav__link-active
     {text-decoration: underline;
      text-decoration-thickness: auto;
      text-decoration-color: #707070;}
+
+div.intro {overflow: hidden;}
+
+button, button:visited, button:active {
+    outline:none;
+}
 
 /*button
     {overflow:visible;border:0;font:inherit;-webkit-font-smoothing:inherit;letter-spacing:inherit;background:none;cursor:pointer}*/

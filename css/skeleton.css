@@ -54,7 +54,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  grid-gap: 1rem;
+  // grid-gap: 1rem;
 }
 
 .backdrop {grid-row: 2 / 13;
@@ -494,6 +494,8 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+/* Small device */
+@media (max-width: 400px) {}
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
