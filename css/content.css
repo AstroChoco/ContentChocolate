@@ -23,6 +23,13 @@
    margin: 5%;
    padding: 5%;}
 
+ .intro-works {
+    place-self: center;
+    margin: 5%;
+    padding: 5%;}
+
+
+
 img {
     min-width: 50%;
     max-width: 80%;
@@ -30,7 +37,7 @@ img {
     max-height: 80%;
     margin: 5% 5% 5% 5%;
     padding: 5% 5% 5% 5%;
-    place-self: center;
+    place-self: center stretch;
 }
 img+h5 {
     text-decoration: none;
@@ -67,9 +74,35 @@ button.mindmap, button.userjourney, button.sitemap, button.portfolio
          -ms-touch-action:manipulation;
          touch-action:manipulation;
     }
-button.mindmap:active
+
+button.mindmapBite, button.userjourneyBite, button.sitemapBite, button.portfolioBite
+    {display: block;
+         position: center;
+            height: 90%;
+            width: 60%;
+            margin: 0px 20px 0px 80px;
+            padding: 0 20px 0 20px;
+            color: #fff;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            white-space: nowrap;
+            background-image: url("../images/chocolate-bite.png");
+            opacity: 0.8;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+            cursor: pointer;
+            box-sizing: border-box;
+         -ms-touch-action:manipulation;
+         touch-action:manipulation;
+    }
+/*button.mindmap:active
  {background-image: url("../images/chocolate-bite.png");
- }
+ } */
 a.button
     {display: inline-block;
     position: center;
@@ -99,10 +132,15 @@ a
     color: #D2691E;
     }
 
-a[class="main-nav__link"]:hover, a[class="main-nav__link"]:active
-    {text-decoration-line: underline;
+a[class="main-nav__link"]:hover
+    {text-decoration: underline;
     text-decoration-thickness: auto;
     text-decoration-color: #707070;}
+
+a.main-nav__link-active
+    {text-decoration: underline;
+     text-decoration-thickness: auto;
+     text-decoration-color: #707070;}
 
 /*button
     {overflow:visible;border:0;font:inherit;-webkit-font-smoothing:inherit;letter-spacing:inherit;background:none;cursor:pointer}*/

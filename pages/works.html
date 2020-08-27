@@ -26,6 +26,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon2.png">
 
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="../scripts/main.js"></script>
+
 </head>
 <body>
 
@@ -33,18 +37,18 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
   <div class="header">
-    <a href="#"><h4 class="title">Content Chocolate</h4></a>
+    <a href="../index.html"><h4 class="title">Content Chocolate</h4></a>
   </div>
   <div class="sidebar main-nav">
     <a href="../index.html" class="main-nav__link"><h5>About</h5></a>
-    <a href="#works/" class="main-nav__link"><h5>Works</h5></a>
+    <a href="#works/" class="main-nav__link main-nav__link-active"><h5>Works</h5></a>
     <a href="blog.html" class="main-nav__link"><h5>Blog</h5></a>
   </div>
   <div class="backdrop">
   </div>
 
-  <div class="sample">
-    <div class="intro">
+  <div class="sample" id="sample">
+    <div class="intro-works" id="intro-works" style="display:block">
       <h3>The why, the what and the how</h3>
       <p>Here presents you my thought-process and skillset for planning this online portfolio in response to the why, the what and the how.</p>
       <p>Why I wanted an online presence?
@@ -54,18 +58,38 @@
       <p>How will I make myself a matching content designer to hiring managers and recruiters?
         Showing my thought-process by a mindmap, understandings of target audience by user journey and story-telling by a sitemap.</p>
     </div>
+    <div class="mindmapContent" id="mindmapContent" style="display:none">
+      <img src="../images/mindmap.jpg" alt="Mindmap of being a content designer"/>
+    </div>
+    <div class="userjourneyContent" id="userjourneyContent" style="display:none">
+      <img src="../images/userjourney.jpg" alt="User journey to successfully landing an interview"/>
+    </div>
+    <div class="sitemapContent" id="sitemapContent" style="display:none">
+      <img src="../images/sitemap.jpg" alt="The architecture of the website Content Chocolate"/>
+    </div>
+    <div class="portfolioContent" id="portfolioContent" style="display:none">
+      <img src="../images/chocolate-making.png" alt="The portfolio is still in the making..."/>
+      <h5>Still in the making...</h5>
+    </div>
   </div>
   <div class="chocolate-mindmap">
-    <button class="mindmap" onclick="changeImage()" id="fullChocolate">Mindmap</button>
+    <button class="mindmap" id="fullChocolate" onclick="show('mindmapContent'); biteChocolate()" style="display:inline-block">Mindmap</button>
+    <button class="mindmapBite" id="chocolateBite" style="display:none">Mindmap</button>
+    <p id="chocolateBite" style="display:none">Links me as a content designer to the expectations
+      of the recruitment.</p>
   </div>
   <div class="chocolate-userjourney">
-    <button class="userjourney">User journey</button>
+    <button class="userjourney" id="fullChocolate" onclick="show('userjourneyContent'); biteChocolate()" style="display:inline-block">User Journey</button>
+    <button class="userjourney" id="chocolateBite" style="display:none">User Journey</button>
+    <p id="chocolateBite" style="display:none">Shows the journey from my CV screening by the recruiter to a successful landing of an interview.</p>
   </div>
   <div class="chocolate-sitemap">
-    <button class="sitemap">Sitemap</button>
+    <button class="sitemap" id="fullChocolate" onclick="show('sitemapContent'); biteChocolate()" style="display:inline-block">Sitemap</button>
+    <button class="sitemap" id="chocolateBite" style="display:none">Sitemap</button>
+    <p id="chocolateBite" style="display:none">Architects the information and structure of Content Chocolate.</p>
   </div>
   <div class="chocolate-portfolio">
-    <button class="portfolio">Portfolio</button>
+    <button class="portfolio" id="fullChocolate" onclick="show('portfolioContent')">Portfolio</button>
   </div>
 </div>
 
