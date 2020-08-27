@@ -24,10 +24,11 @@
    padding: 5%;
    overflow: hidden;}
 
- .intro-works {
+.intro-works {
     place-self: center;
     margin: 5%;
-    padding: 5%;}
+    padding: 5%;
+}
 
 .chocolateBite {
     width: 33%;

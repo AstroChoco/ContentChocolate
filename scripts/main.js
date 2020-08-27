@@ -23,7 +23,10 @@ function showClass(className) {
 
 function showContent(div_id) {
     hideClass('contentAreas');
-    document.getElementById('intro-works').innerHTML = document.getElementById(div_id).innerHTML;
+    var introWorks = document.getElementById('intro-works');
+    introWorks.innerHTML = document.getElementById(div_id).innerHTML;
+    introWorks.style.margin = '0';
+    introWorks.style.padding = '0';
 }
 
 function hideAndShow(hide_id, show_id) {
