@@ -34,6 +34,8 @@
     width: 33%;
     float: left;
     display: none;
+    font-size: 0.8em;
+    padding: 0 0 0 1%;
 }
 
 img {
@@ -86,7 +88,7 @@ button.bittenButton
     {display: block;
          position: center;
             height: 90%;
-            width: 27%;
+            width: 33%;
             margin: 0px 0 0px 80px;
             padding: 0 20px 0 20px;
             color: #fff;
