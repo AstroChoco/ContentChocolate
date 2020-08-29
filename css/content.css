@@ -40,19 +40,38 @@
 
 img {
     min-width: 30%;
-    max-width: 80%;
+    max-width: 60%;
     min-height: 10%;
-    max-height: 80%;
-    margin: 5% 5% 5% 5%;
-    padding: 5% 5% 5% 5%;
+    max-height: 60%;
+    margin: 5% 0 5% 5%;
+    padding: 5% 0 5% 5%;
     place-self: center stretch;
 }
 img+h5 {
     text-decoration: none;
     color: #D2691E;
-    text-align: center;
-    place-self: center;}
+    text-align: left;
+    place-self: center;
+    margin-left: 30%;}
 
+.footer ul {
+    margin: 1rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    align-self: center;}
+
+.footer ul li:before {
+   content: "·";
+   padding: 1rem;
+
+}
+
+.footer ul li:first-child:before {
+    content: "";
+    padding: 0;
+}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

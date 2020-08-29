@@ -57,7 +57,7 @@
   // grid-gap: 1rem;
 }
 
-.backdrop {grid-row: 2 / 13;
+.backdrop {grid-row: 2 / 12;
            grid-column: 2 / 13}
 
 .about-page {
@@ -76,12 +76,12 @@
 
 .content-left {
   grid-row: 2 / 13;
-  grid-column: 2 / 8;
+  grid-column: 2 / 9;
 }
 
 .content-right {
   grid-row: 2 / 13;
-  grid-column: 8 / 13;
+  grid-column: 9 / 13;
 }
 
 .sample {
@@ -119,7 +119,7 @@
 
 .footer {
   grid-row: 12 / 13;
-  grid-column: 1 / 13;
+  grid-column: 2 / 13;
 }
 
 /* For devices larger than 400px */
@@ -381,7 +381,7 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: square inside; }
 ol {
   list-style: decimal inside; }
 ol, ul {
