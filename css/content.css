@@ -38,6 +38,13 @@
     padding: 0 0 0 1%;
 }
 
+/*.sample {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
 img, img.selfie {
     min-width: 30%;
     max-width: 60%;
@@ -56,6 +63,9 @@ img.img-works {
     margin: 2% 0 2% 5%;
     padding: 5% 0 5% 5%;
     place-self: center stretch;
+     display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 img+h5 {
