@@ -156,7 +156,9 @@ button.bittenButton
 /*button.mindmap:active
  {background-image: url("../images/chocolate-bite.png");
  } */
-a.button
+
+
+a.profile
     {display: inline-block;
     position: center;
        height: 38px;
